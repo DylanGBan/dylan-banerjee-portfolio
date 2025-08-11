@@ -12,12 +12,17 @@ export const AboutSection = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 pt-1.5">
               <div className="flex px-20 mb-0 justify-center">
-                <img src="/headshot.png" className="rounded w-auto h-auto" />
+                <img
+                  src={`${import.meta.env.BASE_URL}headshot.png`}
+                  className="rounded w-auto h-auto"
+                />
               </div>
 
               <div className="flex flex-row pt-4 justify-center">
                 <a
-                  href="/Dylan-Banerjee-Resume-2025.pdf"
+                  href={`${
+                    import.meta.env.BASE_URL
+                  }Dylan-Banerjee-Resume-2025.pdf`}
                   target="_blank"
                   className="page-button flex"
                 >
@@ -56,7 +61,7 @@ export const AboutSection = () => {
                         <br />
                       </span>
                       <span className="text-center">
-                        September, 2022 - Present <br /> {" "}
+                        September, 2022 - Present <br />{" "}
                       </span>{" "}
                       <span className="italic pt-2">
                         Minor: Cognitive Science (Machine Learning Discipline)

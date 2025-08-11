@@ -10,7 +10,7 @@ const projects = [
     title: "Stock Bot",
     description:
       "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
-    image: "/projects/stockbot-telegram.png",
+    image: `${import.meta.env.BASE_URL}projects/stockbot-telegram.png`,
     tag: ["Telegram", "Python", "OpenAI API"],
     status: false,
     demoUrl: "#",
@@ -21,7 +21,7 @@ const projects = [
     title: "Smart Meeting Summarizer",
     description:
       "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
-    image: "/projects/summarizer-code.png",
+    image: `${import.meta.env.BASE_URL}projects/summarizer-code.png`,
     tag: ["Python", "OpenAI API", "Scikit-learn"],
     status: false,
     demoUrl: "#",
@@ -59,28 +59,33 @@ export const ProjectsSection = () => {
       if (tag.includes("OpenAI API")) {
         return (
           <img
-            src="/projects/openai-logo.webp"
+            src={`${import.meta.env.BASE_URL}projects/openai-logo.webp`}
             className="w-10 h-10 object-cover"
           />
         );
       } else if (tag.includes("Telegram")) {
-        return <img src="/projects/telegram-logo.png" className="w-10 h-10" />;
+        return (
+          <img
+            src={`${import.meta.env.BASE_URL}projects/telegram-logo.png`}
+            className="w-10 h-10"
+          />
+        );
       } else if (tag.includes("Python")) {
         return (
           <img
-            src="/projects/python-logo.jpg"
+            src={`${import.meta.env.BASE_URL}projects/python-logo.jpg`}
             className="w-10 h-10 object-cover"
           />
         );
       } else if (tag.includes("Scikit-learn")){
         return (
           <img
-            src="/projects/scikit-logo.png"
+            src={`${import.meta.env.BASE_URL}projects/scikit-logo.png`}
             className="w-auto h-auto object-cover -translate-y-0.4 bg-white"
           />
         );
       }
-      return <img src="/projects/project1.png" className="w-10 h-10" />;
+      return <img src="" className="w-10 h-10" />;
 
     };
 

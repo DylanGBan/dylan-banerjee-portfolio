@@ -5,8 +5,8 @@ const experiences = [
   {
     image: (
       <img
-        src=""
-        className="w-auto h-auto object-cover translate-y-1.5 translate-x-1 scale-170"
+        src={`${import.meta.env.BASE_URL}oai-logo.png`}
+        className="w-auto h-auto object-cover translate-y-4 translate-x-0.5 scale-262"
       />
     ),
     title: "Web Development Intern (Full Stack)",
@@ -22,7 +22,7 @@ const experiences = [
   {
     image: (
       <img
-        src="/ucsd-seal-logo.png"
+        src={`${import.meta.env.BASE_URL}ucsd-seal-logo.png`}
         className="w-full h-full object-cover"
       />
     ),
@@ -39,7 +39,7 @@ const experiences = [
   {
     image: (
       <img
-        src="/stanford-junior-seal.png"
+        src={`${import.meta.env.BASE_URL}stanford-junior-seal.png`}
         className="w-full h-full object-cover scale-110"
       />
     ),
@@ -55,7 +55,7 @@ const experiences = [
   {
     image: (
       <img
-        src="/triton.png"
+        src={`${import.meta.env.BASE_URL}triton.png`}
         className="w-12 h-12 mx-1 object-cover translate-y-1 translate-x-0.5"
       />
     ),
@@ -72,7 +72,7 @@ const experiences = [
   {
     image: (
       <img
-        src="/asg-logo.jpg"
+        src={`${import.meta.env.BASE_URL}asg-logo.jpg`}
         className="w-auto h-auto object-cover translate-y-1.5 translate-x-1 scale-170"
       />
     ),

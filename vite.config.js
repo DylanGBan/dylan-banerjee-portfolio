@@ -20,6 +20,6 @@ export default defineConfig({
       },
     },
   },
-  base: "/dylan-banerjee-portfolio",
+  base: "/dylan-banerjee-portfolio/",
 });
  

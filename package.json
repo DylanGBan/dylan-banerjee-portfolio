@@ -1,5 +1,6 @@
 {
-  "name": "website",
+  "name": "dylan-banerjee-portfolio-website",
+  "homepage": "https://DylanGBan.github.io/dylan-banerjee-portfolio/",
   "private": true,
   "version": "0.0.0",
   "type": "module",

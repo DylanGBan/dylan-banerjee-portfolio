@@ -6,12 +6,12 @@ const experiences = [
     image: (
       <img
         src={`${import.meta.env.BASE_URL}oai-logo.png`}
-        className="w-auto h-auto object-cover translate-y-4 translate-x-0.5 scale-262"
+        className="w-full h-full object-cover scale-155 translate-x-0.5 translate-y-0.5"
       />
     ),
     title: "Web Development Intern (Full Stack)",
     location: "Orgill Anesthesia Services Inc.",
-    date: "May 2025 - Current",
+    date: "August 2025 - Current",
     points: [
       "Coding and deploying company website with employee logins, company logistics, and contact points",
       "Employee logins include email verification and optional 2FA that can be used with authenticator apps",

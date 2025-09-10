@@ -11,7 +11,6 @@ const lang = [
         mb-2
       ></img>
     ),
-    mastery: `95%`,
   },
 
   {
@@ -23,7 +22,6 @@ const lang = [
         mb-2
       ></img>
     ),
-    mastery: `90%`,
   },
 
   {
@@ -35,11 +33,21 @@ const lang = [
         mb-2
       ></img>
     ),
-    mastery: `90%`,
   },
 
   {
-    skill: "C/C++",
+    skill: "C++",
+    icon: (
+      <img
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+        className="w-14 h-14"
+        mb-2
+      ></img>
+    ),
+  },
+
+  {
+    skill: "C",
     icon: (
       <img
         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
@@ -47,7 +55,6 @@ const lang = [
         mb-2
       ></img>
     ),
-    mastery: `85%`,
   },
 
   {
@@ -59,7 +66,6 @@ const lang = [
         mb-2
       ></img>
     ),
-    mastery: `80%`,
   },
 
   {
@@ -71,7 +77,6 @@ const lang = [
         mb-2
       ></img>
     ),
-    mastery: `80%`,
   },
 
   {
@@ -83,7 +88,6 @@ const lang = [
         mb-2
       ></img>
     ),
-    mastery: `80%`,
   },
 
   {
@@ -95,7 +99,6 @@ const lang = [
         mb-2
       ></img>
     ),
-    mastery: `75%`,
   },
 
   {
@@ -107,7 +110,6 @@ const lang = [
         mb-2
       ></img>
     ),
-    mastery: `70%`,
   },
 
   {
@@ -119,7 +121,6 @@ const lang = [
         mb-2
       ></img>
     ),
-    mastery: `70%`,
   },
 
   {
@@ -131,7 +132,6 @@ const lang = [
         mb-2
       ></img>
     ),
-    mastery: `68%`,
   },
 ];
 
@@ -174,7 +174,7 @@ export const SkillsSection = () => {
          {inView && (
             <TypeAnimation
               sequence={[
-                "There is lots of cool things I can do with all of my skill sets! The projects below are just some examples of what I can do"
+                "There is lots of cool things I can do with all of my skill sets! The projects below are just some examples of what I can do :)"
           ]}
               speed={30}
               cursor={true}

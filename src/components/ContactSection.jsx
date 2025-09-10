@@ -11,7 +11,6 @@ import { cn } from "@/lib/utils";
 // ]
 
 export const ContactSection = () => {
-
   const [isHovering, setIsHovering] = useState(false);
   const [currentCard, setCurrentCard] = useState(null);
 
@@ -20,13 +19,16 @@ export const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-10 md:py-24 px-4 relative bg-secondary/30">
+    <section
+      id="contact"
+      className="py-10 md:py-24 px-4 relative bg-secondary/30"
+    >
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
           Get In <span className="text-primary"> Touch</span>
         </h2>
 
-        <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+        <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto text-lg font-semibold">
           Contact me in any of these forms of communication if you would like to
           speak to me about my work!
         </p>
@@ -49,7 +51,9 @@ export const ContactSection = () => {
                 isHovering && currentCard == 1 ? "motion-preset-seesaw" : ""
               )}
             >
-              <Mail className="h-20 w-20 text-primary" />
+              <a href={`mailto:${getEmail()}`}>
+                <Mail className="h-20 w-20 text-primary" />
+              </a>
             </div>
 
             <div className="h-fit font-bold text-xl pb-6">
@@ -73,6 +77,7 @@ export const ContactSection = () => {
               setIsHovering(false);
               setCurrentCard(null);
             }}
+            target="_blank"
           >
             <div
               className={cn(
@@ -80,7 +85,12 @@ export const ContactSection = () => {
                 isHovering && currentCard == 2 ? "motion-preset-seesaw" : ""
               )}
             >
-              <MapPin className="h-20 w-20 text-primary" />
+              <a
+                href="https://earth.google.com/web/search/California/"
+                target="_blank"
+              >
+                <MapPin className="h-20 w-20 text-primary" />
+              </a>
             </div>
 
             <div className="h-fit font-bold text-xl pb-6">
@@ -111,7 +121,12 @@ export const ContactSection = () => {
                 isHovering && currentCard == 3 ? "motion-preset-seesaw" : ""
               )}
             >
-              <Linkedin className="h-20 w-20 text-primary" />
+              <a
+                href="https://www.linkedin.com/in/dylan-banerjee"
+                target="_blank"
+              >
+                <Linkedin className="h-20 w-20 text-primary" />
+              </a>
             </div>
 
             <div className="h-fit font-bold text-xl pb-6">

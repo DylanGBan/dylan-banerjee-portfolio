@@ -11,14 +11,14 @@ export const AboutSection = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 pt-1.5">
-              <div className="flex px-20 mb-0 justify-center">
+              <div className="flex px-10 md:px-15 mb-0 justify-center md:w-lg md:h-lg">
                 <img
                   src={`${import.meta.env.BASE_URL}headshot.png`}
                   className="rounded w-auto h-auto"
                 />
               </div>
 
-              <div className="flex flex-row pt-4 justify-center">
+              <div className="flex flex-row pt-4 justify-center md:w-lg md:h-lg">
                 <a
                   href={`${
                     import.meta.env.BASE_URL
@@ -51,7 +51,7 @@ export const AboutSection = () => {
                       {" "}
                       Education
                     </h4>
-                    <p className="text-muted-foreground text-sm">
+                    <div className="text-muted-foreground text-sm">
                       {" "}
                       <span className="font-semibold">
                         Mathematics - Computer Science (BS) <br />
@@ -63,10 +63,10 @@ export const AboutSection = () => {
                       <span className="text-center">
                         September, 2022 - Present <br />{" "}
                       </span>{" "}
-                      <span className="italic pt-2">
+                      <p className="italic pt-2">
                         Minor: Cognitive Science (Machine Learning Discipline)
-                      </span>
-                    </p>
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -78,8 +78,26 @@ export const AboutSection = () => {
                     <Code className="h-6 w-6 text-foreground" />
                   </div>
                   <div className="text-left">
-                    <h4 className="font-semibold text-lg"> Goal</h4>
-                    <p className="text-muted-foreground"> (Goals)</p>
+                    <h4 className="font-semibold text-lg"> Goals</h4>
+                    <ul className="flex-row text-muted-foreground text-sm list-disc pl-4 space-y-1">
+                      {" "}
+                      <li>
+                        <span className="italic">Pursue</span> a Master’s in
+                        Computer Science to advance my knowledge and research
+                        skills.
+                      </li>
+                      <li>
+                        <span className="italic">Develop</span> stronger
+                        expertise in Software Engineering through hands-on
+                        projects and problem solving.
+                      </li>
+                      <li>
+                        <span className="italic">Explore</span> and understand
+                        more about operating systems and
+                        processors to gain deeper insight into system efficiency
+                        and design.
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -92,12 +110,16 @@ export const AboutSection = () => {
                   </div>
                   <div className="text-left">
                     <h4 className="font-semibold text-lg"> Leisure</h4>
-                    <p className="text-muted-foreground">
+                    <ul className="flex-row text-muted-foreground text-sm list-disc pl-4 space-y-1">
                       {" "}
                       <li>Skiing</li>
-                      <li>Play video games</li>
-                      <li>Fish</li>
-                    </p>
+                      <li>Playing video games</li>
+                      <li>Fishing</li>
+                      <li>
+                        Fun Fact: I did my first Bike the Bay in San Diego this
+                        year!
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>

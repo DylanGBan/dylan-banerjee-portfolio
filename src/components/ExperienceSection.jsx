@@ -9,13 +9,12 @@ const experiences = [
         className="w-full h-full object-cover scale-155 translate-x-0.5 translate-y-0.5"
       />
     ),
-    title: "Web Development Intern (Full Stack)",
+    title: "Web Development Volunteer (Full Stack)",
     location: "Orgill Anesthesia Services Inc.",
     date: "August 2025 - Current",
     points: [
-      "Coding and deploying company website with employee logins, company logistics, and contact points",
+      "Personal project in coding and deploying company website with employee logins, company logistics, and contact points",
       "Employee logins include email verification and optional 2FA that can be used with authenticator apps",
-      "Creating a stock portfolio website for CFO of company, built with Python and AI in the backend",
     ],
   },
 

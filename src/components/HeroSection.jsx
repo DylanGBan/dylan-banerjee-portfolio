@@ -1,4 +1,5 @@
 import { ArrowDown } from "lucide-react"
+import { Link } from "react-router-dom"
 import DarkVeil from "../blocks/Backgrounds/DarkVeil/DarkVeil";
 import Particles from "../blocks/Backgrounds/Particles/Particles"
 
@@ -39,7 +40,7 @@ export const HeroSection = () => {
           </div>
         </div>
 
-        <a href="#about">
+        <Link to="/about">
           <div className="opacity-0 absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-fade-in-delay-max">
             <span className="text-lg text-muted-foreground mb-2 animate-bounce">
               {" "}
@@ -47,7 +48,7 @@ export const HeroSection = () => {
             </span>
             <ArrowDown className="h-8 w-8 text-primary animate-bounce" />
           </div>
-        </a>
+        </Link>
       </section>
     );
 }

@@ -1,16 +1,14 @@
 import { cn } from "@/lib/utils";
 import { X, Menu } from "lucide-react";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { ThemeToggle } from "../components/ThemeToggle";
-import { Modal } from "./Modal";
 
 const navItems = [
-  { name: "Home", href: "#home" },
-  { name: "About", href: "#about" },
-  { name: "Experience", href: "#experience" },
-  { name: "Skills", href: "#skills" },
-  { name: "Projects", href: "#projects" },
-  { name: "Contact", href: "#contact" },
+  { name: "Home", to: "/" },
+  { name: "Experience", to: "/experience" },
+  { name: "Showcase", to: "/showcase" },
+  { name: "Contact", to: "/contact" },
 ];
 
 
@@ -53,24 +51,24 @@ export const Navbar = () => {
           )}
         >
           <div className="container flex items-center justify-between">
-            <a className="text-xl font-bold flex text-primary" href="#hero">
+            <Link className="text-xl font-bold flex text-primary" to="/">
               <span className="relative px-5 z-10">
                 {" "}
                 <span className="text-glow text-foreground">Dylan's</span>{" "}
                 Portfolio
               </span>
-            </a>
+            </Link>
 
             {/* desktop */}
             <div className="hidden w-fit md:flex 2xl:flex-1/2 2xl:justify-center 2xl:ml-90 space-x-8">
               {navItems.map((item, key) => (
-                <a
+                <Link
                   key={key}
-                  href={item.href}
+                  to={item.to}
                   className="text-foreground/80 hover:text-primary transition-colors duration-300"
                 >
                   {item.name}
-                </a>
+                </Link>
               ))}
             </div>
 
@@ -101,16 +99,16 @@ export const Navbar = () => {
         >
           <div className="flex flex-col space-y-8 text-xl">
             {navItems.map((item, key) => (
-              <a
+              <Link
                 key={key}
-                href={item.href}
+                to={item.to}
                 className="text-foreground/80 hover:text-primary transition-colors duration-300 "
                 onClick={() => {
                   setIsMenuOpen(false);
                 }}
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
           </div>
         </div>

@@ -13,6 +13,9 @@ const navItems = [
 
 
 export const Navbar = () => {
+    const scrollToTop = () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    };
 
     const [isScrolled, setIsScrolled] = useState(false)
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -65,6 +68,7 @@ export const Navbar = () => {
                 <Link
                   key={key}
                   to={item.to}
+                  onClick={scrollToTop}
                   className="text-foreground/80 hover:text-primary transition-colors duration-300"
                 >
                   {item.name}
@@ -104,7 +108,7 @@ export const Navbar = () => {
                 to={item.to}
                 className="text-foreground/80 hover:text-primary transition-colors duration-300 "
                 onClick={() => {
-                  setIsMenuOpen(false);
+                  setIsMenuOpen(false); scrollToTop();
                 }}
               >
                 {item.name}

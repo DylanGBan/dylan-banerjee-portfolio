@@ -8,26 +8,6 @@ const courseGroups = [
     summary: "Foundations in programming and calculus",
     courses: [
       {
-        term: "Fall 2022",
-        code: "CSE 11",
-        title: "Accelerated Introduction to Programming",
-        description:
-          "Introduced structured programming and problem-solving techniques using a high-level programming language with emphasis on algorithmic thinking.",
-        focus: ["Programming Fundamentals", "Problem Solving", "Algorithms"],
-      },
-      {
-        term: "Fall 2022",
-        code: "MATH 20A",
-        title: "Calculus for Science & Engineering",
-        description:
-          "Developed foundational differential calculus skills for functions of one variable with applications to science and engineering problems.",
-        focus: [
-          "Differential Calculus",
-          "Modeling",
-          "Mathematical Foundations",
-        ],
-      },
-      {
         term: "Winter 2023",
         code: "CSE 12",
         title: "Basic Data Structures & Object-Oriented Design",
@@ -82,6 +62,26 @@ const courseGroups = [
         description:
           "Studied ordinary differential equations with applications to physical and biological systems.",
         focus: ["Differential Equations", "Modeling", "Applied Mathematics"],
+      },
+      {
+        term: "Fall 2022",
+        code: "CSE 11",
+        title: "Accelerated Introduction to Programming",
+        description:
+          "Introduced structured programming and problem-solving techniques using a high-level programming language with emphasis on algorithmic thinking.",
+        focus: ["Programming Fundamentals", "Problem Solving", "Algorithms"],
+      },
+      {
+        term: "Fall 2022",
+        code: "MATH 20A",
+        title: "Calculus for Science & Engineering",
+        description:
+          "Developed foundational differential calculus skills for functions of one variable with applications to science and engineering problems.",
+        focus: [
+          "Differential Calculus",
+          "Modeling",
+          "Mathematical Foundations",
+        ],
       },
     ],
   },
@@ -182,6 +182,22 @@ const courseGroups = [
     summary: "Advanced machine learning, systems, and numerical methods",
     courses: [
       {
+        term: "Winter 2026",
+        code: "CSE 190",
+        title: "Data Center Systems",
+        description:
+          "Data center exploration and distributed systems learning. Topics reinforced through a data center application project. ",
+        focus: ["Data Centers", "Research", "Systems"],
+      },
+      {
+        term: "Winter 2026",
+        code: "MATH 170A",
+        title: "Introduction to Numerical Analysis",
+        description:
+          "Studied numerical methods for solving linear systems, interpolation, and approximation.",
+        focus: ["Numerical Methods", "Linear Systems", "Approximation"],
+      },
+      {
         term: "Fall 2025",
         code: "CSE 150A",
         title: "AI: Probabilistic Models",
@@ -200,30 +216,15 @@ const courseGroups = [
       {
         term: "Fall 2025",
         code: "CSE 221",
-        title: "Operating Systems",
+        title: "Graduate - Operating Systems",
         description:
           "Designed and implemented operating system components including virtual memory and process management.",
         focus: ["Virtual Memory", "Concurrency", "Systems Programming"],
       },
-      {
-        term: "Winter 2026",
-        code: "CSE 190",
-        title: "Topics in Computer Science & Engineering",
-        description:
-          "Explored advanced or emerging topics in computer science through seminar-style coursework.",
-        focus: ["Advanced Topics", "Research", "Systems"],
-      },
-      {
-        term: "Winter 2026",
-        code: "MATH 170A",
-        title: "Introduction to Numerical Analysis",
-        description:
-          "Studied numerical methods for solving linear systems, interpolation, and approximation.",
-        focus: ["Numerical Methods", "Linear Systems", "Approximation"],
-      },
     ],
   },
 ];
+
 
 export const ClassTimeline = () => {
   const orderedGroups = [...courseGroups].reverse();
@@ -275,7 +276,7 @@ export const ClassTimeline = () => {
                     </p>
                   </div>
                   <div className="flex items-center gap-3">
-                    <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-semibold">
+                    <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-semibold text-center">
                       {group.courses.length} classes
                     </span>
                     <ChevronDown
@@ -298,7 +299,7 @@ export const ClassTimeline = () => {
                     {group.courses.map((course) => (
                       <div
                         key={course.code}
-                        className="rounded-3xl border border-border/60 bg-background/80 px-5 py-5 shadow-xl"
+                        className="rounded-3xl border border-border/60 bg-background/80 px-5 py-5"
                       >
                         <div className="flex items-center justify-between gap-3 text-sm font-semibold text-primary">
                           <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10">
@@ -315,7 +316,7 @@ export const ClassTimeline = () => {
                         <p className="text-muted-foreground mt-2">
                           {course.description}
                         </p>
-                        <div className="flex flex-wrap gap-2 mt-4">
+                        <div className="flex flex-wrap gap-2 mt-4 justify-center">
                           {course.focus.map((item) => (
                             <span
                               key={`${group.title}-${course.code}-${item}`}

@@ -133,6 +133,17 @@ const lang = [
       ></img>
     ),
   },
+
+  {
+    skill: "PyTorch",
+    icon: (
+      <img
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg"
+        className="w-14 h-14"
+        mb-2
+      ></img>
+    ),
+  },
 ];
 
 export const SkillsSection = () => {
@@ -146,7 +157,7 @@ export const SkillsSection = () => {
   return (
     <section id="skills" className="py-24 px-4 relative">
       <div className="container mx-auto max-w-5xl">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+        <h2 className="text-3xl md:text-5xl font-bold mb-12 text-center">
           My <span className="text-primary">Skills</span>
         </h2>
 

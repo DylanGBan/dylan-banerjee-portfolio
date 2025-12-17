@@ -14,7 +14,7 @@ export const AboutSection = () => {
               <div className="flex px-10 md:px-15 mb-0 justify-center md:w-lg md:h-lg">
                 <img
                   src={`${import.meta.env.BASE_URL}headshot.png`}
-                  className="rounded w-auto h-auto"
+                  className="rounded-3xl w-auto h-auto"
                 />
               </div>
 

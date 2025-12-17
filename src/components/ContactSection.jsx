@@ -21,7 +21,6 @@ export const ContactSection = () => {
       label: "Email",
       description:
         "Best for opportunities, collaborations, or quick questions.",
-      action: `Say hello`,
       href: `mailto:${getEmail()}`,
       display: "",
     },
@@ -30,7 +29,6 @@ export const ContactSection = () => {
       icon: MapPin,
       label: "Location",
       description: "Available for roles across San Diego, California and beyond.",
-      action: "View on Maps",
       href: "https://earth.google.com/web/search/California/",
       display: "",
     },
@@ -39,7 +37,6 @@ export const ContactSection = () => {
       icon: Linkedin,
       label: "LinkedIn",
       description: "Connect for professional updates and longer chats.",
-      action: "Visit profile",
       href: "https://www.linkedin.com/in/dylan-banerjee",
       display: "",
     },
@@ -134,13 +131,10 @@ export const ContactSection = () => {
                     <method.icon className="w-6 h-6" />
                   </div>
                   <div className="flex-1 space-y-1">
-                    <div className="flex items-center justify-between">
-                      <p className="text-lg font-semibold">{method.label}</p>
-                      <span className="text-sm text-primary">
-                        {method.action}
-                      </span>
+                    <div className="flex items-center">
+                      <p className="mx-auto text-lg font-semibold">{method.label}</p>
                     </div>
-                    <p className="text-muted-foreground">
+                    <p className="text-muted-foreground text-center">
                       {method.description}
                     </p>
                     <p className="text-foreground font-medium">

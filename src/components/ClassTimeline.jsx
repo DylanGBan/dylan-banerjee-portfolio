@@ -8,30 +8,6 @@ const courseGroups = [
     summary: "Foundations in programming and calculus",
     courses: [
       {
-        term: "Winter 2023",
-        code: "CSE 12",
-        title: "Basic Data Structures & Object-Oriented Design",
-        description:
-          "Studied core data structures and object-oriented programming principles with an emphasis on abstraction and software design.",
-        focus: ["Data Structures", "Object-Oriented Design", "Abstraction"],
-      },
-      {
-        term: "Winter 2023",
-        code: "CSE 15L",
-        title: "Software Tools & Techniques Laboratory",
-        description:
-          "Applied professional software development tools including Unix, version control, debugging, and build systems.",
-        focus: ["Unix", "Git", "Software Tooling"],
-      },
-      {
-        term: "Winter 2023",
-        code: "MATH 20B",
-        title: "Calculus for Science & Engineering",
-        description:
-          "Extended calculus to integral techniques and applications relevant to engineering and physical sciences.",
-        focus: ["Integral Calculus", "Applications", "Mathematical Analysis"],
-      },
-      {
         term: "Spring 2023",
         code: "CSE 30",
         title: "Computer Organization & Systems Programming",
@@ -54,6 +30,30 @@ const courseGroups = [
         description:
           "Introduced multivariable calculus including partial derivatives, multiple integrals, and vector-valued functions.",
         focus: ["Multivariable Calculus", "Vector Analysis", "Geometry"],
+      },
+      {
+        term: "Winter 2023",
+        code: "CSE 12",
+        title: "Basic Data Structures & Object-Oriented Design",
+        description:
+          "Studied core data structures and object-oriented programming principles with an emphasis on abstraction and software design.",
+        focus: ["Data Structures", "Object-Oriented Design", "Abstraction"],
+      },
+      {
+        term: "Winter 2023",
+        code: "CSE 15L",
+        title: "Software Tools & Techniques Laboratory",
+        description:
+          "Applied professional software development tools including Unix, version control, debugging, and build systems.",
+        focus: ["Unix", "Git", "Software Tooling"],
+      },
+      {
+        term: "Winter 2023",
+        code: "MATH 20B",
+        title: "Calculus for Science & Engineering",
+        description:
+          "Extended calculus to integral techniques and applications relevant to engineering and physical sciences.",
+        focus: ["Integral Calculus", "Applications", "Mathematical Analysis"],
       },
       {
         term: "Summer 2023",
@@ -90,14 +90,6 @@ const courseGroups = [
     summary: "Data structures, discrete math, and statistical reasoning",
     courses: [
       {
-        term: "Winter 2024",
-        code: "MATH 154",
-        title: "Discrete Math & Graph Theory",
-        description:
-          "Developed mathematical tools for computer science including logic, combinatorics, graph theory, and proofs.",
-        focus: ["Discrete Mathematics", "Graph Theory", "Proofs"],
-      },
-      {
         term: "Spring 2024",
         code: "CSE 100R",
         title: "Advanced Data Structures",
@@ -112,6 +104,14 @@ const courseGroups = [
         description:
           "Introduced statistical inference, estimation, hypothesis testing, and regression techniques.",
         focus: ["Statistics", "Inference", "Regression"],
+      },
+      {
+        term: "Winter 2024",
+        code: "MATH 154",
+        title: "Discrete Math & Graph Theory",
+        description:
+          "Developed mathematical tools for computer science including logic, combinatorics, graph theory, and proofs.",
+        focus: ["Discrete Mathematics", "Graph Theory", "Proofs"],
       },
       {
         term: "Fall 2024",
@@ -136,6 +136,14 @@ const courseGroups = [
     summary: "Algorithms, operating systems, and probabilistic foundations",
     courses: [
       {
+        term: "Spring 2025",
+        code: "CSE 120",
+        title: "Operating Systems Principles",
+        description:
+          "Examined concurrency, synchronization, memory management, and file systems at a conceptual level.",
+        focus: ["Operating Systems", "Concurrency", "Memory Management"],
+      },
+      {
         term: "Winter 2025",
         code: "CSE 101",
         title: "Design & Analysis of Algorithms",
@@ -159,22 +167,6 @@ const courseGroups = [
           "Continued study of algebraic structures including rings, fields, and homomorphisms.",
         focus: ["Rings", "Fields", "Algebraic Structures"],
       },
-      {
-        term: "Spring 2025",
-        code: "CSE 120",
-        title: "Operating Systems Principles",
-        description:
-          "Examined concurrency, synchronization, memory management, and file systems at a conceptual level.",
-        focus: ["Operating Systems", "Concurrency", "Memory Management"],
-      },
-      {
-        term: "Spring 2025",
-        code: "MATH 180A",
-        title: "Introduction to Probability",
-        description:
-          "Established a rigorous foundation in probability theory and random variables.",
-        focus: ["Probability", "Random Variables", "Distributions"],
-      },
     ],
   },
   {
@@ -191,11 +183,27 @@ const courseGroups = [
       },
       {
         term: "Winter 2026",
+        code: "CSE 130",
+        title: "Programming Languages",
+        description:
+          "Analyzed programming language paradigms and design principles through comparative study.",
+        focus: ["Programming Paradigms", "Language Design"],
+      },
+      {
+        term: "Winter 2026",
         code: "MATH 170A",
         title: "Introduction to Numerical Analysis",
         description:
           "Studied numerical methods for solving linear systems, interpolation, and approximation.",
         focus: ["Numerical Methods", "Linear Systems", "Approximation"],
+      },
+      {
+        term: "Fall 2025",
+        code: "CSE 221",
+        title: "Graduate - Operating Systems",
+        description:
+          "Designed and implemented operating system components including virtual memory and process management.",
+        focus: ["Virtual Memory", "Concurrency", "Systems Programming"],
       },
       {
         term: "Fall 2025",
@@ -212,14 +220,6 @@ const courseGroups = [
         description:
           "Studied supervised and unsupervised learning algorithms with theoretical and practical analysis.",
         focus: ["Machine Learning", "Optimization", "Generalization"],
-      },
-      {
-        term: "Fall 2025",
-        code: "CSE 221",
-        title: "Graduate - Operating Systems",
-        description:
-          "Designed and implemented operating system components including virtual memory and process management.",
-        focus: ["Virtual Memory", "Concurrency", "Systems Programming"],
       },
     ],
   },

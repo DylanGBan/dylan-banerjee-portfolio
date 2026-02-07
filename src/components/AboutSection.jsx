@@ -22,7 +22,7 @@ export const AboutSection = () => {
                 <a
                   href={`${
                     import.meta.env.BASE_URL
-                  }Dylan-Banerjee-Resume-2025.pdf`}
+                  }Dylan-Banerjee-Resume-2026.pdf`}
                   target="_blank"
                   className="page-button flex"
                 >
@@ -63,9 +63,6 @@ export const AboutSection = () => {
                       <span className="text-center">
                         September, 2022 - Present <br />{" "}
                       </span>{" "}
-                      <p className="italic pt-2">
-                        Minor: Cognitive Science (Machine Learning Discipline)
-                      </p>
                     </div>
                   </div>
                 </div>
@@ -116,7 +113,7 @@ export const AboutSection = () => {
                       <li>Playing video games</li>
                       <li>Fishing</li>
                       <li>
-                        Fun Fact: I did my first Bike the Bay in San Diego this
+                        Fun Fact: I did my first Bike the Bay in San Diego last
                         year!
                       </li>
                     </ul>

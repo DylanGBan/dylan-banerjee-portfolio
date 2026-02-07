@@ -1,20 +1,21 @@
 import { useState } from "react";
 import { cn } from "@/lib/utils";
+import { BriefcaseBusiness } from "lucide-react";
 
 const experiences = [
   {
     image: (
       <img
-        src={`${import.meta.env.BASE_URL}oai-logo.png`}
-        className="w-full h-full object-cover scale-155 translate-x-0.5 translate-y-0.5"
+        src={`${import.meta.env.BASE_URL}asg-logo.jpg`}
+        className="w-auto h-auto object-cover translate-y-1.5 translate-x-1 scale-170"
       />
     ),
-    title: "Web Development Volunteer (Full Stack)",
-    location: "Orgill Anesthesia Services Inc.",
-    date: "August 2025 - Current",
+    title: "IT Intern / IT Associate",
+    location: "American Systems Group",
+    date: "November 2022 - Current",
     points: [
-      "Personal project in coding and deploying company website with employee logins, company logistics, and contact points",
-      "Employee logins include email verification and optional 2FA that can be used with authenticator apps",
+      "Troubleshooting technical issues, maintaining computer systems, and providing technical support to staff members.",
+      "Hands-on experience in network administration, software installation, and system configuration",
     ],
   },
 
@@ -67,22 +68,6 @@ const experiences = [
       "A tutor during lab hours to teach concepts and assist with assignments",
     ],
   },
-
-  {
-    image: (
-      <img
-        src={`${import.meta.env.BASE_URL}asg-logo.jpg`}
-        className="w-auto h-auto object-cover translate-y-1.5 translate-x-1 scale-170"
-      />
-    ),
-    title: "IT Intern / IT Associate",
-    location: "American Systems Group",
-    date: "November 2022 - September 2024",
-    points: [
-      "Troubleshooting technical issues, maintaining computer systems, and providing technical support to staff members.",
-      "Hands-on experience in network administration, software installation, and system configuration",
-    ],
-  },
 ];
 
 export const ExperienceSection = () => {
@@ -93,10 +78,19 @@ export const ExperienceSection = () => {
   return (
     <section id="experience" className="py-24 px-4 relative">
       <div className="container mx-auto max-w-5xl">
-        <h2 className="text-3xl md:text-5xl font-bold mb-10 text-center">
-          {" "}
-          My <span className="text-primary"> Experience </span>
-        </h2>
+
+        <div className="text-center space-y-4 mb-14">
+          <div className="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-primary/10 text-primary text-sm font-semibold">
+            <BriefcaseBusiness className="w-4 h-4" />
+            Professional Experiences
+          </div>
+          <h2 className="text-3xl md:text-5xl font-bold">
+            Experience <span className="text-primary"> Timeline</span>
+          </h2>
+          <p className="text-muted-foreground max-w-3xl mx-auto text-lg">
+            A timeline of my most releveant experiences
+          </p>
+        </div>
 
         <div className="flex flex-col md:flex-row gap-10">
           <div className="md:w-2/3">
@@ -108,7 +102,7 @@ export const ExperienceSection = () => {
                     "flex items-center p-4 rounded-lg cursor-pointer transition-all duration-300 transform-gpu",
                     selectedExperience == experience
                       ? "bg-primary scale-105 md:scale-110"
-                      : "bg-primary/50"
+                      : "bg-primary/50",
                   )}
                   onClick={() => setSelectedExperience(experience)}
                 >

@@ -129,7 +129,7 @@ export const ExperienceSection = () => {
           <div className="md:w-2/3">
             <div
               key={selectedExperience.title}
-              class="bg-primary p-8 rounded-lg animate-fade-in"
+              className="bg-primary p-8 rounded-lg animate-fade-in"
             >
               {selectedExperience && (
                 <>
@@ -143,9 +143,12 @@ export const ExperienceSection = () => {
                     {" "}
                     {selectedExperience.date}
                   </p>
-                  <ul class="list-disc ml-5 space-y-2">
+                  <ul className="list-disc ml-5 space-y-2">
                     {selectedExperience.points.map((point) => (
-                      <li className="text-sm font-medium text-foreground pl-1 tracking-wider text-left">
+                      <li
+                        key={point}
+                        className="text-sm font-medium text-foreground pl-1 tracking-wider text-left"
+                      >
                         {point}
                       </li>
                     ))}

@@ -171,8 +171,24 @@ const courseGroups = [
   },
   {
     title: "2025 – 2026",
-    summary: "Advanced machine learning, systems, and numerical methods",
+    summary: "Networks, artificial intelligence, systems, and numerical methods",
     courses: [
+      {
+        term: "Spring 2026",
+        code: "CSE 123",
+        title: "Computer Networks",
+        description:
+          "Studying network architecture, protocols, and distributed communication across modern computer systems.",
+        focus: ["Computer Networks", "Protocols", "Distributed Systems"],
+      },
+      {
+        term: "Spring 2026",
+        code: "CSE 150B",
+        title: "AI: Search and Reasoning",
+        description:
+          "Exploring artificial intelligence search methods, logical reasoning, and decision-making techniques.",
+        focus: ["Artificial Intelligence", "Search", "Reasoning"],
+      },
       {
         term: "Winter 2026",
         code: "CSE 190",

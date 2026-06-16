@@ -5,6 +5,19 @@
     <link rel="icon" type="image/svg+xml" href="/portrait-solid.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dylan's Portfolio</title>
+    <script>
+      (function () {
+        var redirectPath = new URLSearchParams(window.location.search).get("redirect");
+
+        if (redirectPath && redirectPath.charAt(0) === "/") {
+          window.history.replaceState(
+            null,
+            "",
+            "/dylan-banerjee-portfolio" + redirectPath
+          );
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

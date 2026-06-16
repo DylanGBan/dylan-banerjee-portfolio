@@ -1,5 +1,6 @@
 import { TypeAnimation } from "react-type-animation"
 import { useInView } from "react-intersection-observer";
+import { Code2 } from "lucide-react";
 
 const lang = [
   {
@@ -157,9 +158,18 @@ export const SkillsSection = () => {
   return (
     <section id="skills" className="py-24 px-4 relative">
       <div className="container mx-auto max-w-5xl">
-        <h2 className="text-3xl md:text-5xl font-bold mb-12 text-center">
-          My <span className="text-primary">Skills</span>
-        </h2>
+        <div className="text-center space-y-4 mb-14">
+          <div className="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-primary/10 text-primary text-sm font-semibold">
+            <Code2 className="w-4 h-4" />
+            Technical Skills
+          </div>
+          <h2 className="text-3xl md:text-5xl font-bold">
+            My <span className="text-primary">Skills</span>
+          </h2>
+          <p className="text-muted-foreground max-w-3xl mx-auto text-lg">
+            Languages, frameworks, and tools I work with
+          </p>
+        </div>
 
         <div className="container grid grid-cols-2 md:grid-cols-4 gap-5 items-center">
           {lang.map((lang, key) => (
